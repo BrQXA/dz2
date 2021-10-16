@@ -1,0 +1,18 @@
+/*Напишите функцию, которая вычисляет N-ое число Фибоначчи.*/
+#include<iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int n;
+	int j;
+	cin >> n;
+	int a = 1;
+	int b = 1;
+	for (j = 1; j <= n; j++) 
+	{	int c = a + b;
+		a = b;
+		b = c;
+	}
+	cout << "n  =  " << b;
+	return 0;
+}
